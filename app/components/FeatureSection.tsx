@@ -1,0 +1,51 @@
+"use client";
+import React from "react";
+import FeatureCard from "../components/features/FeatureCard";
+
+const features = [
+  {
+    iconSrc: "/icon/icon.png", // public/assets/
+    title: "Award-winning team",
+    description:
+      "Access to world-class talent and industry experts to drive innovation and results.",
+  },
+  {
+    iconSrc: "/icon/iicon.png",
+    title: "Data-driven strategy",
+    description:
+      "Leverage big data and analytics to make informed decisions and optimize growth.",
+  },
+  {
+    iconSrc: "/icon/iiicon.png",
+    title: "Global reach",
+    description:
+      "Expand your market presence with our international network and partnership program.",
+  },
+];
+
+const FeatureSection = () => {
+  return (
+    <section className="py-20 px-6 bg-teal-900">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <h2 className="text-3xl md:text-4xl font-extrabold text-white text-center mb-12">
+          We help your business grow faster
+        </h2>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              iconSrc={feature.iconSrc}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FeatureSection;
