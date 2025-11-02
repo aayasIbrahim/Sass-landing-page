@@ -4,7 +4,7 @@ import FeatureCard from "../components/features/FeatureCard";
 
 const features = [
   {
-    iconSrc: "/icon/icon.png", // public/assets/
+    iconSrc: "/icon/icon.png",
     title: "Award-winning team",
     description:
       "Access to world-class talent and industry experts to drive innovation and results.",
@@ -16,7 +16,7 @@ const features = [
       "Leverage big data and analytics to make informed decisions and optimize growth.",
   },
   {
-    iconSrc: "/icon/iiicon.png",
+    iconSrc: "/icon/iacon.png",
     title: "Global reach",
     description:
       "Expand your market presence with our international network and partnership program.",
