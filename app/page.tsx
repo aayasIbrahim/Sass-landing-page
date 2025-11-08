@@ -5,6 +5,7 @@ import HeroBanner from "./components/HeroBanner";
 import HeroSection from "./components/HeroSection";
 import PhraseDisplayCard from "./components/PhraseDisplayCard";
 import TestimonialFeatureSection from "./components/TestimonialFeatureSection";
+import TestimonialSlider from "./components/TestimoniaSlider";
 import TimelineSection from "./components/TimelineSection";
 import TrustedBySection from "./components/TrustedBySection";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <FeatureSection />
       <PhraseDisplayCard />
       <TestimonialFeatureSection />
+      <TestimonialSlider/>
       <AppDownloadCta/>
       <CryptoHeroSection/>
     </>
