@@ -1,3 +1,4 @@
+import AppDownloadCta from "./components/AppDownloadCta";
 import CryptoHeroSection from "./components/CryptoHeroSection";
 import FeatureSection from "./components/FeatureSection";
 import HeroBanner from "./components/HeroBanner";
@@ -17,6 +18,7 @@ export default function Home() {
       <FeatureSection />
       <PhraseDisplayCard />
       <TestimonialFeatureSection />
+      <AppDownloadCta/>
       <CryptoHeroSection/>
     </>
   );
