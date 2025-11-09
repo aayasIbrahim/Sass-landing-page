@@ -1,16 +1,25 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+import { useSession } from "next-auth/react";
 import RegisterDrawer from "./RegisterDrawer";
 import SignUpDrawer from "./SignUpDrawer";
 import SignInDrawer from "./SignInDrawer";
 import Image from "next/image";
 
 const NavBar: React.FC = () => {
+   const { data: session, status } = useSession();
   const [isRegisterDrawerOpen, setIsRegisterDrawerOpen] =
     useState<boolean>(false);
   const [isSignUpOpen, setIsSignUpOpen] = useState<boolean>(false);
   const [isSignInOpen, setIsSignInOpen] = useState<boolean>(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+
+ 
+
+  useEffect(() => {
+    console.log("✅ Session Details and full information:", session);
+    console.log("✅ Status:", status);
+  }, [session, status]);
 
   return (
     <header className="bg-white shadow">
@@ -23,7 +32,7 @@ const NavBar: React.FC = () => {
             width={40}
             height={40}
           />
-          <div  className=" font-bold text-gray-800">Courseficton</div>
+          <div className=" font-bold text-gray-800">Courseficton</div>
         </div>
 
         {/* === Desktop Links === */}
