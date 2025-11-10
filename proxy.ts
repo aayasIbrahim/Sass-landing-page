@@ -18,7 +18,7 @@ export async function proxy(request: NextRequest) {
     if (!token) {
       // Not logged in → redirect to Sign In
       const url = request.nextUrl.clone();
-      url.pathname = "/signin";
+      url.pathname = "/";     //ekne ashole sine page e niye jabe  amr sine up drawer tai home page render  korbe
       return NextResponse.redirect(url);
     }
 
